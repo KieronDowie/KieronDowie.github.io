@@ -1,111 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Kieron Dowie</title>
-
-	<meta name="viewport" content="initial-scale=1">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kieron Dowie</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Khula&family=Gudea&family=Inter&display=swap" rel="stylesheet">
+    <script src="script.js"></script>    
 </head>
-<body>
-	<section class="hero">
-		<nav>
-			<a href="#services">Services</a>
-			<a href="#portfolio">Portfolio</a>
-			<a href="#quote">Contact</a>
-			<a href="cv.pdf" target="_blank" class="cvcta">Download CV</a>  				
-		</nav>
-		<h1>Kieron Dowie</h1>
-		<img src="images/heroimage.svg" alt="Person sitting in front of a computer">
-		<h2 class="typing hidden">Developer. Coder. Creator.</h2>
-	</section>
-	<section class="services" id="services">		
-		<h2>How can I help you?</h2>
-		<div class="cardholder">
-			<div class="card">				
-				<img src="images/website.svg" alt="Image of a webpage">
-				<h3>Handcraft beautiful, responsive websites</h3>
-			</div>
-			<div class="card">
-				<img src="images/build.svg" alt="Construction workers in front of half-built house">
-				<h3>Develop your website from the ground up using best practices</h3>
-			</div>
-			<div class="card">
-				<img src="images/talking.svg" alt="Two people in front of a computer">
-				<h3>Lend my experience to answer any of your questions</h3>
-			</div>
-			<div class="card">
-				<img src="images/bots.svg" alt="Person building a robot">
-				<h3>Create bots and automation to save you time and money</h3>
-			</div>
-			<div class="card">
-				<img src="images/scraping.svg" alt="Image of a spreadsheet">
-				<h3>Scrape the web for data for your business</h3>
-			</div>
-			<div class="card">
-				<img src="images/bug.svg" alt="Icon of an insect">
-				<h3>Fix the bugs on your website and have it running perfectly</h3>
-			</div>
-			<div class="card">
-				<img src="images/tweak.svg" alt="Person turning gears">
-				<h3>Tweak your site to exactly how you envision it</h3>
-			</div>
-			<div class="card">
-				<img src="images/tools.svg" alt="Icon of pen">
-				<h3>Create pixel-perfect websites from your designs</h3>
-			</div>
-		</div>
-	</section>
-	<section class="portfolio" id="portfolio">		
-		<h2>Some Happy Clients</h2>
-		<a href="https://lightspeed.co.za/" target="_blank">
-			<div class="project">
-				<div class="overlay"><p>Made and maintained with HTML5, CSS, Javascript and PHP.</p></div>
-				<img src="images/sites/1.png" alt="Picture of Cybersmart Lightspeed website">			
-			</div>
-		</a>
-		<a href="https://marlothwalk.github.io/" target="_blank">
-			<div class="project">
-				<div class="overlay"><p>Custom single page site designed and created from the ground up with HTML5 and CSS.</p></div>
-				<img src="images/sites/2.png" alt="Picture of Marlothii Conservancy website">			
-			</div>
-		</a>
-		<a href="https://marlothwalk.github.io/Krans" target="_blank">
-			<div class="project">
-				<div class="overlay"><p>Custom single page site designed and created from the ground up with HTML5 and CSS.</p></div>
-				<img src="images/sites/5.png" alt="Picture of Krans Walk website">			
-			</div>
-		</a>
-		<a href="https://marlothwalk.github.io/Frogs" target="_blank">
-			<div class="project">
-				<div class="overlay"><p>Custom single page site designed and created from the ground up with HTML5 and CSS.</p></div>
-				<img src="images/sites/6.png" alt="Picture of Frogs of Gruispan website">			
-			</div>
-		</a>
-		<div class="project">
-			<div class="overlay"><p>Custom site designed and created from the ground up with HTML5 and CSS with plugin integration.</p></div>
-			<img src="images/sites/3.png" alt="Picture of 'Rob Clark' website">
-		</div>		
-		<a href="https://komatipoort.org.za/" target="_blank">
-			<div class="project">
-				<div class="overlay"><p>Custom site designed and created from the ground up with HTML5 and CSS</p></div>
-				<img src="images/sites/7.png" alt="Picture of Komatipoort Business Chamber website">			
-			</div>
-		</a>
-	</section>
-	<section class="quote" id="quote">
-		<h2>How can I help you?</h2>
-		<p>I'm always open to discussing new projects. Just shoot me an email.</p>
-		<form action="mailto:kierondowie@gmail.com" method="post">
-			<button class="cta">Talk to me</button>
-		</form>
-		
-	</section>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<script src="script.js"></script>
+<body onload="onLoad()">
+    <section class="hero">                        
+        <div class="left">
+            <div class="emphasize">
+                <h1>Hi, I'm</h1>
+                <h1 class="namehighlight">Kieron Dowie</h1>
+            </div>         
+            <h2>A passionate web developer from South Africa, dedicated to crafting exceptional online experiences for business and individuals.</h2>
+
+            <div class="buttoncontainer">
+                <button onclick="scrollToWork()">See My Work</button>
+                <p>5 years experience helping people make their dream websites.</p>
+            </div>                                      
+        </div>
+        <div class="right">            
+            <div class="logoscontainer">
+            </div>
+            <img src="hero.png" alt="" /></div>                    
+        </div>
+        <svg class="mask" viewBox="0 0 200 30" preserveAspectRatio="none">
+            <path
+              d="
+              M 0 25 
+              l 100 -10 
+              v 40
+              h -100
+              Z              
+              C 25 0 75 0 100 15
+              M 100 30 
+              Z               
+              L 200 30 
+              L 200 15 
+              C 187 30 140 38 100 15
+              Z 
+            "
+            />
+        </svg>          
+    </section>
+    <section class="responsive">
+        <div class="left scrollWatch mobile-fade-out">
+            <div class="splotch"></div>
+            <div class="slider">
+                <div class="mobile scrollWatch">
+                    <div class="mobiletop">                 
+                    </div>
+                    <div class="mobilescreen">                    
+                    </div>
+                    <div class="mobilebottom"></div>
+                </div> 
+                <div class="tablet scrollWatch">
+                    <div class="tabletscreen">                    
+                        <div class="screentext">					
+                            
+                        </div>
+                    </div>
+                    <div class="tabletbottom"></div>
+                </div> 
+                <div class="computercontainer scrollWatch">            
+                    <div class="computer scrollWatch">
+                        <div class="screen">
+                            <div class="overlay"></div>
+                            <div class="screentext">					
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="computerbottom">
+                        <div class="bottomleft part"></div>
+                        <div class="bottomright part"></div>
+                        <div class="touchpad">
+                            <div class="touchpadleft part"></div>
+                            <div class="touchpadright part"></div>
+                        </div>
+                    </div>
+                    <div class="computerlower"></div>
+                </div>
+            </div>
+        </div> 
+        <div class="right">
+            <div class="block">
+                <h2>Responsive Design</h2>
+                <p>With almost 70% of the world’s internet traffic coming from mobile devices, it’s more important than ever to have a website that looks great on any device. I ensure that every website I make adapts seamlessly to mobiles, tablets and desktop, captivating your audience on any device.</p>
+            </div>            
+            <div class="block">
+                <h2>Pixel-Perfect Code</h2>
+                <p>Whether it's custom code or WordPress templates, I possess the skills to bring your vision to life with fine-tuned precision, ensuring every last pixel of your website is under your control.</p>
+            </div>
+            <div class="block">
+                <h2>Putting You First</h2>
+                <p>I believe in a client-driven approach, empowering both technical and non-technical clients with the knowledge and tools to make informed decisions about your website. I'll be with you every step of the way as we build something special together.</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="carousel" current="0">
+            <div class="left_arrow arrow" onclick="carouselMove(-1)"></div>
+            <div class="right_arrow arrow" onclick="carouselMove(1)"></div>
+            <div class="item active">
+                <div class="scene desktop scrollWatch">                    
+                    <img src="sites/conservancy1.png">
+                </div>
+                <div class="scene mobile scrollWatch">
+                    <img src="sites/conservancy2.png">     
+                </div>
+                <div class="scene tablet scrollWatch">
+                    <img src="sites/conservancy3.png">
+                </div>                
+                <div class="card">
+                    <h2>Marlothii Conservancy Tree Walk</h2>
+                    <h3>Marlothii Conservancy</h3>
+                    <p>Collaborated with a non-profit conservancy member to develop a captivating website guiding users along a scenic walking path. Leveraging HTML5, Javascript, and CSS, I created an immersive experience while seamlessly integrating Google Analytics for valuable user insights.</p>
+                    <div class="tech">
+                        <div class="block"><span>HTML5</span></div>
+                        <div class="block"><span>JQuery</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item hidden">
+                <div class="scene desktop scrollWatch">                    
+                    <img src="sites/frogs1.png">
+                </div>
+                <div class="scene mobile scrollWatch">
+                    <img src="sites/frogs2.png">     
+                </div>
+                <div class="scene tablet scrollWatch">
+                    <img src="sites/frogs3.png">
+                </div>                
+                <div class="card">
+                    <h2>Frogs of Gruispan</h2>
+                    <h3>Marlothii Conservancy</h3>
+                    <p>Developed a dynamic multi-language website for a non-profit organization focused on education and showcasing local frog species. Leveraging HTML5, Javascript, and CSS, I crafted a captivating and immersive experience that incorporated sound, providing users with a multisensory journey. Additionally, I integrated analytics to gather valuable insights into user engagement and behavior.</p>
+                    <div class="tech">
+                        <div class="block"><span>HTML5</span></div>
+                        <div class="block"><span>JQuery</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">        
+        <h1>How can I help you?</h1>
+        <div class="cardcontainer">
+            <div class="card">
+                <div class="inner">
+                    <div class="front">
+                        <div class="side">                    
+                            <img src="skills/code.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Web Development</h2>
+                            <p>I create websites that leave lasting impressions, delivering tailor-made experiences for businesses and individuals alike.</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="side">                    
+                            <img src="skills/code_white.svg">
+                        </div>
+                        <div class="main">
+                            <h2>5 years experience</h2>
+                            <p>Whether it's a simple landing page for an individual or a sprawling website for a business, I bring a wealth of experience to every project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="inner">
+                    <div class="front">
+                        <div class="side">                    
+                            <img src="skills/share.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Insight</h2>
+                            <p>Knowledge is power, especially when it comes to code. I can review your existing website and pinpoint areas for improvement.</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="side">                    
+                            <img src="skills/share_white.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Expert Evaluation</h2>
+                            <p>With a lifetime of website experience, I can swiftly identify what works and what needs improvement, providing valuable insights for optimizing your site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="inner">
+                    <div class="front">
+                        <div class="side">                    
+                            <img src="skills/alert.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Debugging</h2>
+                            <p>Website not working? I can tackle any technical challenge to restore your website to a seamless browsing experience.</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="side">                    
+                            <img src="skills/alert_white.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Problem Solving</h2>
+                            <p>With a wealth of experience in handling a wide range of technical problem and a sharp eye, I take pride in helping others.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="inner">
+                    <div class="front">
+                        <div class="side">                    
+                            <img src="skills/activity.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Analytics</h2>
+                            <p>Unlock the power of data with Website Analytics. Gain valuable insights into your website's performance, user behavior, and conversion rates.</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="side">                    
+                            <img src="skills/activity_white.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Data-Driven</h2>
+                            <p>With a deep understanding of analytics tools and techniques, I'm able to provide actionable insights for optimizing your website and driving results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner">
+                    <div class="front">
+                        <div class="side">                    
+                            <img src="skills/download.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Web Scraping</h2>
+                            <p>With programmatic techniques, I can help you extract valuable data from websites with precision and efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="side">                    
+                            <img src="skills/download_white.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Trusted Results</h2>
+                            <p>Trusted by businesses and individuals alike, I have a track record of excellence assisting business in gathering the data they need.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="inner">
+                    <div class="front">
+                        <div class="side">                    
+                            <img src="skills/loader.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Automation</h2>
+                            <p>Allow me to streamline your workflows, increase efficiency and save you valuable time and resources.</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="side">                    
+                            <img src="skills/loader_white.svg">
+                        </div>
+                        <div class="main">
+                            <h2>Efficient</h2>
+                            <p>From Python scripts to Airtable automations, I have experience streamling client operations, saving them time, and boosting productivity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <svg class="maskbottom" viewBox="0 0 200 30" preserveAspectRatio="none">
+            <path
+            d="
+            M 0 25 
+            l 100 -10 
+            v 40
+            h -100
+            Z              
+            C 25 0 75 0 100 15
+            M 100 30 
+            Z               
+            L 200 30 
+            L 200 15 
+            C 187 30 140 38 100 15
+            Z 
+            "
+            />
+        </svg>
+    </section>
+    <section class="contact">
+        <div class="bubble scrollWatch fade-in-up">
+            <h2 class="contacttophead">Get in touch!</h2>
+            <div class="contactbubblescontainer">
+                <div class="contactbubble">
+                    <div class="leftbubble">
+                        <img src="images/mail.svg" />
+                    </div>
+                    kierondowie@gmail.com
+                    <img class='copy' src="images/copy.svg" />
+                </div>
+                <div class="contactbubble">
+                    <div class="leftbubble">
+                        <img src="images/phone.svg" />
+                    </div>
+                    123 4567 8910
+                    <img class='copy' src="images/copy.svg" />
+                </div>
+            </div>
+            <h2>Want a site like this? Let's chat!</h2>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
